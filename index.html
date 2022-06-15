@@ -18,7 +18,7 @@
 <body>
     <div id="grid-container">
         <div id="side-nav">
-            <h1><i class="bi bi-grid-1x2"></i> Dashboard</h1>
+            <h1 class="dashboard"><i class="bi bi-grid-1x2"></i> Dashboard</h1>
             <ul>
                 <li><i class="bi bi-house"></i> Home</li>
                 <li><i class="bi bi-person-circle"></i> Profile</li>
@@ -35,106 +35,145 @@
         </div>
         <div id="header">
             <div id="top-header">
-                <i class="bi bi-search"></i>
-                <input type="text" />
-                <i class="bi bi-bell"></i>
-                <img src="images/user-profile.jpg" alt="profile picture">
-                <div>Jacob Godwin</div>
+                <div class="th-left">
+                    <i class="bi bi-search"></i>
+                    <div class="searchbar">
+                        <input type="text" class="search" />
+                    </div>
+                </div>
+                <div class="th-right">
+                    <i class="bi bi-bell"></i>
+                    <img src="images/user-profile.jpg" alt="profile picture">
+                    <div>Jacob Godwin</div>
+                </div>
             </div>
             <div id="bottom-header">
-                <img src="images/user-profile.jpg" alt="profile picture">
-                <p>Hi there,</p>
-                <p>Jacob Godwin (@jacobgodwin)</p>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <div class="bh-left">
+                    <img src="images/user-profile.jpg" alt="profile picture">
+                    <div>
+                        <div class="small-text">Hi there,</div>
+                        <div class="profile-name">Jacob Godwin (@jacobgodwin)</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         <div id="main-content">
             <div id="projects">
-                <h1>Your Projects</h1>
+                <div class="projects-title">Your Projects</div>
                 <div id="project-card-container">
                     <div class="project-card">
-                        <h2>Super Cool Project</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus
-                            purus in massa tempor nec feugiat.
-                        </p>
-                    </div>
-                    <div class="project-card">
-                        <h2>Less Cool Project</h2>
-                        <p>
+                        <div class="card-content">
+                            <div class="card-header">Super Cool Project</div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Tristique risus nec feugiat in. Aliquet porttitor lacus luctus
-                            accumsan. Sed egestas egestas fringilla phasellus faucibus.
-                        </p>
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <h2>Impossible App</h2>
-                        <p>
+                        <div class="card-content">
+                            <div class="card-header">Less Cool Project</div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <h2>Easy Peasy App</h2>
-                        <p>
+                        <div class="card-content">
+                            <div class="card-header">Impossible App</div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-                            fusce id velit ut tortor pretium viverra suspendisse potenti.
-                            Dignissim sodales ut eu sem.
-                        </p>
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <h2>Ad Blocker</h2>
-                        <p>
+                        <div class="card-content">
+                            <div class="card-header">Easy Peasy App</div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-content">
+                            <div class="card-header">Ad Blocker</div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ullamcorper morbi tincidunt ornare massa.
-                        </p>
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <h2>Money Maker</h2>
-                        <p>
+                        <div class="card-content">
+                            <div class="card-header">Money Maker</div>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+                        </div>
+                        <div class="share">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-eye"></i>
+                            <i class="bi bi-share"></i>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="announcements">
-                <h1>Announcements</h1>
+                <div class="content-title">Announcements</div>
                 <div class="card">
                     <div>
-                        <h2>Site Maintenance</h2>
-                        <p>
+                        <div class="card-header">Site Maintenance</div>
+                        <div class="card-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit
                             amet consectetur adipiscing elit duis tristique.
-                        </p>
+                        </div>
+                        <hr>
                     </div>
                     <div>
-                        <h2>Community Share Day</h2>
-                        <p>
+                        <div class="card-header">Community Share Day</div>
+                        <div class="card-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Faucibus purus in massa tempor nec feugiat.
-                        </p>
+                        </div>
+                        <hr>
                     </div>
                     <div>
-                        <h2>Update Privacy Policy</h2>
-                        <p>
+                        <div class="card-header">Update Privacy Policy</div>
+                        <div class="card-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Faucibus purus in massa tempor nec feugiat.
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="trending">
-                <h1>Trending</h1>
+                <div class="content-title">Trending</div>
                 <div class="card">
                     <div class="profile-card">
                         <p>@notman</p>
