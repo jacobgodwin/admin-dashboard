@@ -1,0 +1,74 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "nav header"
+    "nav main";
+}
+
+#side-nav {
+  grid-area: nav;
+  background-color: #475569;
+  color: #f1f5f9;
+  border: 1px solid blue;
+}
+
+#header {
+  grid-area: header;
+  background-color: #f8fafc;
+  border: 1px solid red;
+}
+
+#top-header img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+#bottom-header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+#main-content {
+  grid-area: main;
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "projects announce"
+    "projects trending";
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#announcements {
+  grid-area: announce;
+}
+
+#trending {
+  grid-area: trending;
+}
+
+#project-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li i {
+  padding-right: 0.5rem;
+}
